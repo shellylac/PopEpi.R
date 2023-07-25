@@ -1,0 +1,80 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# PopEpi.R
+
+### R Functions for the Pop Epi Team
+
+The PopEpi.R package contains assorted functions that help the PSB Pop
+Epi team with common data wrangling tasks, or functions which are
+designed to speed up and ease the work done by the PSB Pop Epi Team, or
+that may otherwise be useful.
+
+## Installation
+
+You can install the development version of PopEpi.R from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("shellylac/PopEpi.R")
+```
+
+## Details
+
+Currently this package only contains 2 functions:
+
+1.  `create_popepi_project()` which creates and open an R project
+    directory that has relevant sub-directories and is git-enabled and
+    has a basic README.md template,
+
+2.  `%nin%` - a simple utility tool that is basically gives the opposite
+    of the base R `%in%` function (which uses `match()`)
+
+It is envisioned that all team members will contribute to making this
+package an even more amazing resource - by adding more functions!
+
+To get up to speed on how to contribute functions for this package I
+recommend these resources:
+
+- [The R Packages Online Manual](https://r-pkgs.org/) by Hadley Wickam
+  and Jennifer Bryan
+
+- [This
+  tutorial](https://ourcodingclub.github.io/tutorials/writing-r-package/)
+  from Our Coding Club
+
+- [Functions Chapter](https://r4ds.had.co.nz/functions.html) from R for
+  Data Science by Hadley Wickam and Garrett Grolemund
+
+- [Code
+  Testing](https://stirlingcodingclub.github.io/code_testing/testing_notes.html)
+  by Brad Duthie
+
+All functions contributed to this package must serve a single and
+specific purpose, have gone through code review by another team member,
+and must be well documented, provide useful examples, and be robustly
+tested.
+
+## Example usage
+
+``` r
+library(PopEpi.R)
+
+### set up a bespoke git-enabled R project directory
+# create_popepi_project(path = "C:/Users/pathto/my_analysis")
+
+### get help on a package function
+# ?create_popepi_project
+```
+
+## A note on this README file
+
+This README.md file is constructed by renderering the `README.Rmd` and
+this should be done regularly, to keep `README.md` up-to-date.
+`devtools::build_readme()` is handy for this.
+
+As this README file is built from and Rmd file we could embed r code
+chunks or plots. If you want the plots to display in the README file
+then don’t forget to commit and push the resulting figure files (see the
+path for figures in the knitr options above), so they display on GitHub.
