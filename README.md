@@ -78,3 +78,5 @@ As this README file is built from and Rmd file we could embed r code
 chunks or plots. If you want the plots to display in the README file
 then don’t forget to commit and push the resulting figure files (see the
 path for figures in the knitr options above), so they display on GitHub.
+
+<!-- This is an added comment to test Github push functionality -->
