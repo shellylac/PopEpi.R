@@ -2,4 +2,5 @@
 
 export("%nin%")
 export(create_popepi_project)
+export(my_var)
 export(validate_data_cols)
